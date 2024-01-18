@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo com JS</title>
+    <link rel="stylesheet" href="logo.css">
+</head>
+<body>
+
+<video id="meuVideo" class ="video" loop volume="100">
+    <source src="n.mp4" type="video/mp4">
+   
+</video>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var meuVideo = document.getElementById("meuVideo");
+
+        // Adiciona um evento para iniciar o vídeo após 0.5 segundos
+        setTimeout(function () {
+            meuVideo.play();
+        }, 1); // 500 milissegundos = 0.5 segundos
+    });
+</script>
+
+</body>
+</html>
